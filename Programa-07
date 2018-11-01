@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+main ()
+{
+  
+float peso,novopeso_a,novopeso_b;
+
+printf("Digite seu peso\n");
+scanf ("%f",&peso);
+
+novopeso_a = peso * 0.15;
+novopeso_b = peso * 0.20;
+
+printf ("\nVoce engordou 15 porcento, seu novo peso eh %f",novopeso_a + peso);
+printf ("\nVoce emagreceu 20 porcento, seu novo peso eh %f",peso - novopeso_b);
+
+return 0;
+
+}
