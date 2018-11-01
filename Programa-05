@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+main ()
+{
+  
+float preco_atual,desconto;
+
+printf("\n Digite o preco atual do produto");
+scanf ("%f",&preco_atual);
+
+
+desconto = (preco_atual*0.10);
+
+printf ("\n O novo preco do produto eh %f",preco_atual-desconto);
+
+return 0;
+
+}
