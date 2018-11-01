@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+main ()
+{
+  
+float salario,valorvendas,comissao;
+
+printf("Digite o salario do Funcionario\n");
+scanf ("%f",&salario);
+
+printf("Digite o valor de suas vendas\n");
+scanf ("%f",&valorvendas);
+
+comissao = (valorvendas*0.04);
+printf ("\nA comissao do funcionario eh %f",comissao);
+printf ("\n O salario total do funcionario eh %f",salario+comissao);
+
+return 0;
+
+}
