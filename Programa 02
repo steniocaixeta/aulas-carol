@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+main ()
+{
+  
+int n1,n2,n3,resultado;
+
+printf("\n Digite o primeiro numero:");
+scanf ("%i",&n1);
+printf("\n Digite o segundo numero:");
+scanf ("%i",&n2);
+printf("\n Digite o terceiro numero:");
+scanf ("%i",&n3);
+
+resultado=n1*n2*n3;
+printf ("\n O resultado da multiplicacao eh : %i",resultado);
+
+return 0;
+
+}
