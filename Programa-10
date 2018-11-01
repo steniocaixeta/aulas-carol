@@ -1,0 +1,20 @@
+
+#include <stdio.h>
+main ()
+{
+  
+float diagonal_maior,diagonal_menor,resultado;
+
+printf("Digite a Diagonal maior:\n");
+scanf ("%f",&diagonal_maior);
+printf("Digite a Diagonal menor:\n");
+scanf ("%f",&diagonal_menor);
+
+
+resultado=(diagonal_maior * diagonal_menor) /2;
+
+printf ("A area do losango eh: %f",resultado);
+
+return 0;
+
+}
