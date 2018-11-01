@@ -1,0 +1,38 @@
+#include <stdio.h>;
+int main()
+{
+float valor_banana,valor_uva,valor_pessego,valor_tbanana,valor_tuva,valor_tpessego,subtotal,imposto,valortotal;
+int quantidade_banana,quantidade_uva,quantidade_pessego;
+
+printf("Digite o preço unitário da Banana:\n");
+scanf("%f",&valor_banana);
+printf("Digite quantas BANANAS:\n");
+scanf("%i",&quantidade_banana);
+valor_tbanana = valor_banana * quantidade_banana;
+
+printf("Digite o preço unitário da UVA:\n");
+scanf("%f",&valor_uva);
+printf("Digite quantas UVAS:\n");
+scanf("%i",&quantidade_uva);
+valor_tuva = valor_uva * quantidade_uva;
+
+printf("Digite o preço unitário do PESSEGO:\n");
+scanf("%f",&valor_pessego);
+printf("Digite quantos PESSSEGOS:\n");
+scanf("%i",&quantidade_pessego);
+valor_tpessego = valor_pessego * quantidade_pessego;
+
+printf("Produto  ");
+printf("Preço Unitário   ");
+printf("Quantidade   ");
+printf("Preço Total   \n");
+printf("BANANA   %8.2f %15.0i %15.2f\n",valor_banana,quantidade_banana,valor_tbanana);
+printf("UVA   %11.2f %15.0i %15.2f\n",valor_uva,quantidade_uva,valor_tuva);
+printf("PESSEGO   %7.2f %15.0i %15.2f\n",valor_pessego,quantidade_pessego,valor_tpessego);
+subtotal = valor_tbanana + valor_tuva + valor_tpessego;
+printf("SUB-TOTAL %40.2f\n", subtotal);
+imposto = subtotal * 0.05;
+printf("IMPOSTO 5 PORCENTO %31.2f\n",imposto);
+printf("VALOR TOTAL: %37.2f\n",subtotal+imposto);
+return 0;
+}
