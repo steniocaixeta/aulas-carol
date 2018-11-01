@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+main ()
+{
+  
+float ladoa,ladob,resultado;
+
+printf("Digite o lado A\n");
+scanf ("%f",&ladoa);
+printf("Digite o lado B\n");
+scanf ("%f",&ladob);
+
+
+resultado=ladoa * ladob;
+
+printf ("A area do quadrado eh: %f",resultado);
+
+return 0;
+
+}
