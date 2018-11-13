@@ -1,0 +1,57 @@
+//05 – Faça um programa que receba dois números e execute as operações listadas a seguir, de acordo com a
+//escolha do usuário. Se a opção digitada for inválida, mostre uma mensagem de erro.
+//Escolha do Usuário Operação
+//1 Média entre os números digitados
+//2 Diferença do maior pelo menor
+//3 Produto entre os números
+//4 Divisão do primeiro pelo segundo
+
+#include <stdio.h>
+int main()
+{
+float numero1,numero2;
+int opcao;
+    printf("Digite o primeiro numero\n");
+    scanf("%f",&numero1);
+    printf("Digite o segundo numero\n");
+    scanf("%f",&numero2);
+    printf("Digite uma opcao (ex: 1,2,3):\n");
+    printf("1 - Media entre os numeros digitados\n");
+    printf("2 - Diferenca do maior pelo menor\n");
+    printf("3 - Produto entre os numeros\n");
+    printf("4 - Divisao do primeiro pelo segundo\n");
+    scanf("%i",&opcao);
+    if (opcao != 1 && opcao != 2 && opcao != 3 && opcao != 4)
+    {
+    printf("Opcao invalida!");
+	}
+    if (opcao==1)
+
+    {
+    printf("A media entre os numeros eh: %.2f",((numero1+numero2)/2));
+    
+	}
+	if (opcao ==2)
+
+	{
+if (numero1>numero2)
+    {
+    printf ("\n Diferenca do maior pelo menor eh: %.2f", numero1-numero2);
+	}
+	else if (numero1<numero2){
+     printf ("\n Diferenca do maior pelo menor eh: %.2f", numero2-numero1);
+	}
+    else {
+	    printf ("\n Os numeros sao iguais!");
+}
+	}
+		if (opcao ==3){
+printf("Produto entre os numeros eh %.2f",numero1*numero2);
+	
+	}
+		if (opcao ==4){
+printf("Divisao do primeiro pelo segundo\n %.2f",numero1/numero2);
+	}
+		
+return 0;
+}
