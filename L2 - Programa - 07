@@ -1,0 +1,25 @@
+//07 – Faça um programa que dado um número de 1 a 9, imprima na tela a sua tabuada. Se o número digitado
+//for inválido, mostre uma mensagem de erro. 
+
+#include <stdio.h>
+
+int main()
+{
+int numero=0;
+int cont=1;
+printf("Digite um numero de 1 a 9 para exibir sua tabuada.\n");
+scanf("%i",&numero);
+if (numero>0 && numero<=9)
+{
+
+for  (cont=1;cont<=10;cont++)
+{
+printf("%i x %i = %i\n",cont, numero, cont*numero);
+}
+}
+else
+{
+	printf("Numero Invalido!");
+}
+return 0;
+}
