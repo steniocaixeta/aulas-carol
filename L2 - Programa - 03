@@ -1,0 +1,27 @@
+/******************************************************************************
+
+03 – Faça um programa que receba três números e mostre o maior. 
+
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+float numero1,numero2,numero3;
+printf("Digite o primeiro numero:\n");
+scanf("%f",&numero1);
+printf("Digite o segundo numero:\n");
+scanf("%f",&numero2);
+printf("Digite o terceiro numero:\n");
+scanf("%f",&numero3);
+if (numero1 > numero2 && numero1 > numero3)
+printf("O maior numero eh o primeiro:%.2f",numero1);
+else
+   if (numero2 > numero1 && numero2 > numero3)
+   printf("O maior numero eh o segundo:%.2f",numero2);
+   else 
+    printf("O maior numero eh o terceiro:%.2f",numero3);
+   
+return 0;
+}
