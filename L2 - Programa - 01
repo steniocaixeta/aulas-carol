@@ -1,0 +1,27 @@
+/******************************************************************************
+
+01 – Faça um programa que receba quatro notas de um aluno, calcule e mostre a média aritmética das notas e
+a mensagem de aprovado ou reprovado, considerando para aprovação média 7.
+
+*******************************************************************************/
+#include <stdio.h>
+#include <conio.h>
+
+int main()
+{
+float nota,media,soma;
+int i;
+    for (i=1;i<=4;i++)
+{
+    printf("Digite a nota %i do aluno:\n",i);
+    scanf("%f",&nota);
+    soma=soma+nota;
+
+}
+media=soma/4;
+if (media>=7)
+printf("Aluno Aprovado!  - Sua Media Final eh: %.2f",media);
+else
+printf("Aluno Reprovado! - Sua Media Final eh: %.2f",media);
+return 0;
+}
