@@ -1,0 +1,18 @@
+//09 – Faça um programa que que calcule o fatorial de um número N dado pelo usuário.
+
+#include <stdio.h>
+
+int main()
+{
+int numero_n,fatorial,n;
+printf("Digite um numero para encontrar sua fatorial:\n");
+scanf("%i",&numero_n);
+n=numero_n;
+for (fatorial=1;numero_n>1;numero_n = numero_n-1)
+{
+fatorial = fatorial*numero_n;
+
+}
+printf("Fatorial de %i eh: %i",n,fatorial);
+return 0;
+}
