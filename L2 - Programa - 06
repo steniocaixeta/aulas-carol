@@ -1,0 +1,29 @@
+//06 – Faça um programa que lê 5 valores para a, um de cada vez, e conta quantos destes valores são negativos,
+//escrevendo esta informação.
+
+#include <stdio.h>
+int main()
+{
+
+int i;
+int positivos=0;
+int negativos=0;
+float a;
+
+for (i=1;i<=5;i++){
+
+	printf ("Digite o valor para atribuir a A:\n");
+	scanf("%f",&a);
+	if (a < 0)
+	{
+	negativos++;
+}
+	else if (a>0)
+	{
+	positivos++;	
+}
+	}
+
+printf("Voce digitou %i numeros negativos e %i numeros positivos",negativos,positivos);	
+return 0;
+}
