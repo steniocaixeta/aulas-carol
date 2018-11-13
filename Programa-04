@@ -13,7 +13,7 @@ scanf ("%f",&n2);
 
 resultado=(n1*2)+(n2*3);
 
-printf ("\n A media ponderada das notas eh : %f",resultado / (n1+n2));
+printf ("\n A media ponderada das notas eh : %f",resultado / 5);
 
 return 0;
 
