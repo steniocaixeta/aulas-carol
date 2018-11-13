@@ -1,0 +1,26 @@
+
+/******************************************************************************
+
+04 – Faça um programa que receba dois números e divide o primeiro pelo segundo. Lembre de verificar se o
+segundo número é diferente de zero. Caso o segundo número seja igual a zero, imprima a mensagem
+"Impossível dividir."
+
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+float numero1,numero2;
+printf("Programa Divisao de Dois numeros\n");
+printf("Digite o primeiro numero:\n");
+scanf("%f",&numero1);
+printf("Digite o segundo numero:\n");
+scanf("%f",&numero2);
+if (numero2 == 0)
+printf("Impossivel dividir.");
+else
+printf ("A divisao de %.2f por %.2f eh:%.2f",numero1,numero2,numero1/numero2);
+
+return 0;
+}
