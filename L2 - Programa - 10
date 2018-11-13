@@ -1,0 +1,33 @@
+//10 – Faça um programa que que leia 10 valores e encontre o maior e o menor deles. Mostre o resultado.
+
+#include<stdio.h>
+
+int main()
+{
+  float valor, maior = 0, menor = 0;
+  int i=0;
+  
+  printf("Digite um valor:\n");
+    scanf("%f",&valor);
+menor = valor;
+maior = valor;
+for(i=1;i<10;i++ ){
+    
+    printf("Digite um valor:\n");
+    scanf("%f",&valor);
+  
+    if(valor > maior) 
+	{
+    maior = valor;
+	}
+
+    if(valor < menor) 
+    {
+    menor = valor;	
+	}
+
+  }
+  printf ("O menor valor eh: %.2f e o maior eh:%.2f\n",menor, maior);
+  return 0;
+  
+}
